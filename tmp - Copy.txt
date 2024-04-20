@@ -1,0 +1,57 @@
+        void DrawLines()
+        {
+            
+            float posMin = Math.Abs(min);
+            float posMax = Math.Abs(max);
+            int range = (int)((posMin + posMax) / size);
+            GL.glColor3f(0.18f, 0.18f, 0f);
+            if (speed >= 0)
+            {
+                max = trueMax;
+                for(int i=0; i< range; i++)
+                {
+                    if (i % 2 != 0)
+                    {
+                        GL.glBegin(GL.GL_QUADS);
+                        float start= min + i * size, end= min + (i+1) * size;
+                        GL.glVertex3f(10f, -14.9f, end);
+                        GL.glVertex3f(10.0f, -14.9f, start);
+                        GL.glVertex3f(-10.0f, -14.9f, start);
+                        GL.glVertex3f(-10.0f, -14.9f, end);
+                        GL.glEnd();
+                    }
+                }
+                if (animateRoad)
+                {
+                    if (min < trueMin - size * 4)
+                        min = trueMin;
+                    else
+                        min -=speed;
+                }
+            }
+            else
+            {
+                min = trueMin;
+                for (int i = 0; i < range; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        GL.glBegin(GL.GL_QUADS);
+                        float end = max - i * size, start = max - (i + 1) * size;
+                        GL.glVertex3f(10f, -14.9f, end);
+                        GL.glVertex3f(10.0f, -14.9f, start);
+                        GL.glVertex3f(-10.0f, -14.9f, start);
+                        GL.glVertex3f(-10.0f, -14.9f, end);
+                        GL.glEnd();
+                    }
+                }
+                if (animateRoad)
+                {
+                    if (max < trueMin - size * 4)
+                        max = trueMax;
+                    else
+                        max -= speed;
+                }
+            }
+            GL.glColor3f(1, 1, 1);
+        }

@@ -1,0 +1,18 @@
+C:\Users\Vladimir\Downloads\P10\ModelCar\bin\Debug\myOpenGL.exe
+C:\Users\Vladimir\Downloads\P10\ModelCar\bin\Debug\myOpenGL.pdb
+C:\Users\Vladimir\Downloads\P10\ModelCar\obj\Debug\ModelCar.csproj.AssemblyReference.cache
+C:\Users\Vladimir\Downloads\P10\ModelCar\obj\Debug\myOpenGL.Form1.resources
+C:\Users\Vladimir\Downloads\P10\ModelCar\obj\Debug\myOpenGL.Properties.Resources.resources
+C:\Users\Vladimir\Downloads\P10\ModelCar\obj\Debug\ModelCar.csproj.GenerateResource.cache
+C:\Users\Vladimir\Downloads\P10\ModelCar\obj\Debug\ModelCar.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir\Downloads\P10\ModelCar\obj\Debug\myOpenGL.exe
+C:\Users\Vladimir\Downloads\P10\ModelCar\obj\Debug\myOpenGL.pdb
+C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\bin\Debug\myOpenGL.exe
+C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\bin\Debug\myOpenGL.pdb
+C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\ModelCar.csproj.AssemblyReference.cache
+C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\myOpenGL.Properties.Resources.resources
+C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\ModelCar.csproj.GenerateResource.cache
+C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\ModelCar.csproj.CoreCompileInputs.cache
+C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\myOpenGL.exe
+C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\myOpenGL.pdb
+C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\myOpenGL.Form1.resources
