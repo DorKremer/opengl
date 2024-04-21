@@ -186,6 +186,8 @@ namespace myOpenGL
         private void showRef_CheckedChanged(object sender, EventArgs e)
         {
             cGL.showRef = showRef.Checked;
+            
+
         }
 
         private void shadows_CheckedChanged(object sender, EventArgs e)
