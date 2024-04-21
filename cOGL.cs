@@ -202,7 +202,7 @@ namespace OpenGL
                 GL.glColorMask((byte)GL.GL_FALSE, (byte)GL.GL_FALSE, (byte)GL.GL_FALSE, (byte)GL.GL_FALSE);
                 GL.glDisable(GL.GL_DEPTH_TEST);
 
-                DrawRoad();
+                DrawRoad(false);
 
                 GL.glColorMask((byte)GL.GL_TRUE, (byte)GL.GL_TRUE, (byte)GL.GL_TRUE, (byte)GL.GL_TRUE);
                 GL.glEnable(GL.GL_DEPTH_TEST);
@@ -225,16 +225,17 @@ namespace OpenGL
                 GL.glPopMatrix();
 
                 GL.glDepthMask((byte)GL.GL_FALSE);
-                DrawRoad();
+                DrawRoad(false);
                 GL.glDepthMask((byte)GL.GL_TRUE);
                 GL.glDisable(GL.GL_STENCIL_TEST);
                 DrawScene();
-                DrawRoad();
+                DrawRoad(true);
+
             }
             else
             {
                 DrawScene();
-                DrawRoad();
+                DrawRoad(true);
             }
             GL.glFlush();
             WGL.wglSwapBuffers(m_uint_DC);
@@ -517,7 +518,7 @@ namespace OpenGL
         }
 
 
-        void DrawRoad()
+        void DrawRoad(bool updateSpeed)
         {
             GL.glEnable(GL.GL_LIGHTING);
             if (showRef)
@@ -531,11 +532,11 @@ namespace OpenGL
             GL.glVertex3f(-100.0f, -15.0f, trueMax);
             GL.glEnd();
 
-            DrawLines();
-            DrawSidewalk();
+            DrawLines(updateSpeed);
+            DrawSidewalk(updateSpeed);
         }
 
-        void DrawLines()
+        void DrawLines(bool updateSpeed)
         {
 
             float posMin = Math.Abs(min);
@@ -558,7 +559,7 @@ namespace OpenGL
                         GL.glEnd();
                     }
                 }
-                if (animateRoad)
+                if (animateRoad && updateSpeed)
                 {
                     if (min < trueMin - size * 4)
                         min = trueMin;
@@ -582,7 +583,7 @@ namespace OpenGL
                         GL.glEnd();
                     }
                 }
-                if (animateRoad)
+                if (animateRoad && updateSpeed)
                 {
                     if (max < trueMin - size * 4)
                         max = trueMax;
@@ -593,7 +594,7 @@ namespace OpenGL
             GL.glColor3f(1, 1, 1);
         }
 
-        void DrawSidewalk()
+        void DrawSidewalk(bool updateSpeed)
         {
             float posMin = Math.Abs(min);
             float posMax = Math.Abs(max);
@@ -639,7 +640,7 @@ namespace OpenGL
 
                     GL.glEnd();
                 }
-                if (animateRoad)
+                if (animateRoad && updateSpeed)
                 {
                     if (min < trueMin - tileSize * 4)
                         min = trueMin;
@@ -688,7 +689,7 @@ namespace OpenGL
 
                     GL.glEnd();
                 }
-                if (animateRoad)
+                if (animateRoad && updateSpeed)
                 {
                     if (max < trueMin - tileSize * 4)
                         max = trueMax;

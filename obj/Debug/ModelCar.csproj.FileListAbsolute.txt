@@ -16,3 +16,13 @@ C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\ModelCar.csproj.Co
 C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\myOpenGL.exe
 C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\myOpenGL.pdb
 C:\Users\Herr Yulie\Desktop\HIT\OpenGL\P10\ModelCar\obj\Debug\myOpenGL.Form1.resources
+C:\Users\alonb\Source\Repos\opengl\bin\Debug\myOpenGL.exe.config
+C:\Users\alonb\Source\Repos\opengl\bin\Debug\myOpenGL.exe
+C:\Users\alonb\Source\Repos\opengl\bin\Debug\myOpenGL.pdb
+C:\Users\alonb\Source\Repos\opengl\obj\Debug\ModelCar.csproj.AssemblyReference.cache
+C:\Users\alonb\Source\Repos\opengl\obj\Debug\myOpenGL.Form1.resources
+C:\Users\alonb\Source\Repos\opengl\obj\Debug\myOpenGL.Properties.Resources.resources
+C:\Users\alonb\Source\Repos\opengl\obj\Debug\ModelCar.csproj.GenerateResource.cache
+C:\Users\alonb\Source\Repos\opengl\obj\Debug\ModelCar.csproj.CoreCompileInputs.cache
+C:\Users\alonb\Source\Repos\opengl\obj\Debug\myOpenGL.exe
+C:\Users\alonb\Source\Repos\opengl\obj\Debug\myOpenGL.pdb
