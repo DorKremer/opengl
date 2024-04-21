@@ -33,29 +33,7 @@ namespace OpenGL
             ground1[2, 1] = -14.8f;
             ground1[2, 2] = trueMin;
 
-            ground2[0, 0] = 100f;
-            ground2[0, 1] = -15f;
-            ground2[0, 2] = 200f;
 
-            ground2[1, 0] = 100.0f;
-            ground2[1, 1] = -15f;
-            ground2[1, 2] = -200f;
-
-            ground2[2, 0] = 100.0f;
-            ground2[2, 1] = -10f;
-            ground2[2, 2] = 200;
-
-            ground3[0, 0] = 100f + tileSize;
-            ground3[0, 1] = -10f;
-            ground3[0, 2] = 200f;
-
-            ground3[1, 0] = 100.0f;
-            ground3[1, 1] = -10f;
-            ground3[1, 2] = 200;
-
-            ground3[2, 0] = 100.0f + tileSize;
-            ground3[2, 1] = -10f;
-            ground3[2, 2] = -200;
 
             InitializeGL();
             obj = GLU.gluNewQuadric();
@@ -88,7 +66,7 @@ namespace OpenGL
         {
             get { return m_uint_RC; }
         }
-
+        // cam
         public bool TranIn = false;
         public bool TranOut = false;
         public bool StartPos = false;
@@ -104,8 +82,6 @@ namespace OpenGL
         public bool showCubemap = true;
         public int intOptionC = 0;
         float[,] ground1 = new float[3, 3];
-        float[,] ground2 = new float[3, 3];
-        float[,] ground3 = new float[3, 3];
         public float[] ScrollValue = new float[14];
         public float carX = 0f, carY = 0f, carZ = 0f;
         public float horizontalAngle, verticalAngle;
@@ -117,14 +93,17 @@ namespace OpenGL
         float tileSize = 200;
 
         float[] cubeXform = new float[16];
-
+        //cam
         float DeltaX = 0f;
         float AngleX = 0f;
         float AngleY = 0f;
+        //light
         float[] pos = new float[4];
-        public float[] lightPos = new float[4];
+
         double[] AccumulatedRotationsTraslations = new double[16];
+        //cross
         float angle = 0.0f;
+        //animate
         public float trueMin = -1000f;
         public float min = -1000f, max = 1000f, size = 100f;
         public float trueMax = 1000;

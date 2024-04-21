@@ -84,62 +84,7 @@ namespace myOpenGL
                     cGL.carX -= cGL.speed;
                     cGL.Draw();
                     break;
-                //case 33:   //PageUp +
-                //    cGL.TranIn = true;
-                //    cGL.Draw();
-                //    break;
-                //case 34:   //PageDown -
-                //    cGL.TranOut = true;
-                //    cGL.Draw();
-                //    break;               
-                //case 97:    //num 1
-                //    cGL.RotDown = true;
-                //    cGL.RotLeft = true;
-                //    cGL.Draw();
-                //    break;
-                //case 98:    //num 2
-                //    cGL.RotDown = true;
-                //    cGL.Draw();
-                //    break;
-                //case 99:    //num 3
-                //    cGL.RotDown = true;
-                //    cGL.RotRight = true;
-                //    cGL.Draw();
-                //    break;
-                //case 100:   //num 4
-                //    cGL.RotLeft = true;
-                //    cGL.Draw();
-                //    break;
-                //case 101:   //num 5
-                //    cGL.StartPos = true;
-                //    cGL.Draw();
-                //    break;
-                //case 102:   //num 6
-                //    cGL.RotRight = true;
-                //    cGL.Draw();
-                //    break;
-                //case 103:   //num 7
-                //    cGL.RotUp = true;
-                //    cGL.RotLeft = true;
-                //    cGL.Draw();
-                //    break;
-                //case 104:   //num 8
-                //    cGL.RotUp = true;
-                //    cGL.Draw();
-                //    break;
-                //case 105:   //num 9
-                //    cGL.RotUp = true;
-                //    cGL.RotRight = true;
-                //    cGL.Draw();
-                //    break;
-                //case 107:   //num +
-                //    cGL.TranIn = true;
-                //    cGL.Draw();
-                //    break;
-                //case 109:   //num -
-                //    cGL.TranOut = true;
-                //    cGL.Draw();
-                //    break;            
+          
                 default:    //Any other key
                     break;
             }
